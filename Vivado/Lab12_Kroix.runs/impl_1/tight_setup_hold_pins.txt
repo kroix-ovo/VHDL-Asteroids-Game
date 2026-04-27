@@ -1,0 +1,29 @@
++====================+===================+==============================================+
+| Launch Setup Clock | Launch Hold Clock | Pin                                          |
++====================+===================+==============================================+
+| sys_clk_pin        | sys_clk_pin       | pong_graph_unit/ast_x_reg_reg[6][6]/D        |
+| sys_clk_pin        | sys_clk_pin       | pong_graph_unit/ast_x_reg_reg[5][6]/D        |
+| sys_clk_pin        | sys_clk_pin       | pong_graph_unit/ast_x_reg_reg[6][1]/D        |
+| sys_clk_pin        | sys_clk_pin       | pong_graph_unit/ast_x_reg_reg[5][1]/D        |
+| sys_clk_pin        | sys_clk_pin       | pong_graph_unit/ast_x_reg_reg[2][1]/D        |
+| sys_clk_pin        | sys_clk_pin       | pong_graph_unit/ast_x_reg_reg[4][1]/D        |
+| sys_clk_pin        | sys_clk_pin       | pong_graph_unit/ast_x_reg_reg[1][1]/D        |
+| sys_clk_pin        | sys_clk_pin       | pong_graph_unit/ast_x_reg_reg[4][3]/D        |
+| sys_clk_pin        | sys_clk_pin       | pong_graph_unit/ship_timer_reg_reg[5]/D      |
+| sys_clk_pin        | sys_clk_pin       | pong_graph_unit/ship_timer_reg_reg[4]/D      |
+| sys_clk_pin        | sys_clk_pin       | pong_graph_unit/ship_timer_reg_reg[2]/D      |
+| sys_clk_pin        | sys_clk_pin       | pong_graph_unit/ship_timer_reg_reg[3]/D      |
+| sys_clk_pin        | sys_clk_pin       | pong_graph_unit/missile_active_reg_reg/D     |
+| sys_clk_pin        | sys_clk_pin       | pong_graph_unit/ast_move_lim_reg_reg[1][0]/D |
+| sys_clk_pin        | sys_clk_pin       | pong_graph_unit/ship_dead_reg_reg/D          |
+| sys_clk_pin        | sys_clk_pin       | pong_graph_unit/ast_move_lim_reg_reg[5][0]/D |
+| sys_clk_pin        | sys_clk_pin       | pong_graph_unit/ast_move_cnt_reg_reg[3][2]/D |
+| sys_clk_pin        | sys_clk_pin       | pong_graph_unit/ast_move_lim_reg_reg[5][1]/D |
+| sys_clk_pin        | sys_clk_pin       | pong_graph_unit/ast_center_reg_reg[3][0]/D   |
+| sys_clk_pin        | sys_clk_pin       | pong_graph_unit/ast_timer_reg_reg[0][4]/D    |
+| sys_clk_pin        | sys_clk_pin       | pong_graph_unit/ast_timer_reg_reg[0][1]/D    |
+| sys_clk_pin        | sys_clk_pin       | pong_graph_unit/ast_timer_reg_reg[0][2]/D    |
+| sys_clk_pin        | sys_clk_pin       | pong_graph_unit/ast_timer_reg_reg[0][3]/D    |
+| sys_clk_pin        | sys_clk_pin       | pong_graph_unit/ast_move_cnt_reg_reg[0][2]/D |
+| sys_clk_pin        | sys_clk_pin       | pong_graph_unit/ast_move_cnt_reg_reg[6][2]/D |
++--------------------+-------------------+----------------------------------------------+

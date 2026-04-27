@@ -1,0 +1,108 @@
+Copyright 1986-2022 Xilinx, Inc. All Rights Reserved. Copyright 2022-2023 Advanced Micro Devices, Inc. All Rights Reserved.
+---------------------------------------------------------------------------------------------------------------------------------------------
+| Tool Version : Vivado v.2023.2 (win64) Build 4029153 Fri Oct 13 20:14:34 MDT 2023
+| Date         : Thu Apr 23 13:57:33 2026
+| Host         : KroixLaptop running 64-bit major release  (build 9200)
+| Command      : report_control_sets -verbose -file pong_top_st_control_sets_placed.rpt
+| Design       : pong_top_st
+| Device       : xc7a35t
+---------------------------------------------------------------------------------------------------------------------------------------------
+
+Control Set Information
+
+Table of Contents
+-----------------
+1. Summary
+2. Histogram
+3. Flip-Flop Distribution
+4. Detailed Control Set Information
+
+1. Summary
+----------
+
++----------------------------------------------------------+-------+
+|                          Status                          | Count |
++----------------------------------------------------------+-------+
+| Total control sets                                       |    30 |
+|    Minimum number of control sets                        |    30 |
+|    Addition due to synthesis replication                 |     0 |
+|    Addition due to physical synthesis replication        |     0 |
+| Unused register locations in slices containing registers |   111 |
++----------------------------------------------------------+-------+
+* Control sets can be merged at opt_design using control_set_merge or merge_equivalent_drivers
+** Run report_qor_suggestions for automated merging and remapping suggestions
+
+
+2. Histogram
+------------
+
++--------------------+-------+
+|       Fanout       | Count |
++--------------------+-------+
+| Total control sets |    30 |
+| >= 0 to < 4        |     0 |
+| >= 4 to < 6        |     7 |
+| >= 6 to < 8        |     2 |
+| >= 8 to < 10       |     3 |
+| >= 10 to < 12      |     1 |
+| >= 12 to < 14      |     1 |
+| >= 14 to < 16      |     0 |
+| >= 16              |    16 |
++--------------------+-------+
+* Control sets can be remapped at either synth_design or opt_design
+
+
+3. Flip-Flop Distribution
+-------------------------
+
++--------------+-----------------------+------------------------+-----------------+--------------+
+| Clock Enable | Synchronous Set/Reset | Asynchronous Set/Reset | Total Registers | Total Slices |
++--------------+-----------------------+------------------------+-----------------+--------------+
+| No           | No                    | No                     |               0 |            0 |
+| No           | No                    | Yes                    |              54 |           34 |
+| No           | Yes                   | No                     |               0 |            0 |
+| Yes          | No                    | No                     |               0 |            0 |
+| Yes          | No                    | Yes                    |             419 |          261 |
+| Yes          | Yes                   | No                     |               0 |            0 |
++--------------+-----------------------+------------------------+-----------------+--------------+
+
+
+4. Detailed Control Set Information
+-----------------------------------
+
++----------------+----------------------------------------------+------------------+------------------+----------------+--------------+
+|  Clock Signal  |                 Enable Signal                | Set/Reset Signal | Slice Load Count | Bel Load Count | Bels / Slice |
++----------------+----------------------------------------------+------------------+------------------+----------------+--------------+
+|  clk_IBUF_BUFG | pong_graph_unit/ast_timer_reg[6][4]_i_1_n_0  | reset_IBUF       |                3 |              5 |         1.67 |
+|  clk_IBUF_BUFG | pong_graph_unit/ast_timer_reg[2][4]_i_1_n_0  | reset_IBUF       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | pong_graph_unit/ast_timer_reg[4][4]_i_1_n_0  | reset_IBUF       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | pong_graph_unit/ast_timer_reg[0][4]_i_1_n_0  | reset_IBUF       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | pong_graph_unit/ast_timer_reg[3][4]_i_1_n_0  | reset_IBUF       |                5 |              5 |         1.00 |
+|  clk_IBUF_BUFG | pong_graph_unit/ast_timer_reg[5][4]_i_1_n_0  | reset_IBUF       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | pong_graph_unit/ast_timer_reg[1][4]_i_1_n_0  | reset_IBUF       |                2 |              5 |         2.50 |
+|  clk_IBUF_BUFG | pong_graph_unit/ship_timer_reg[5]_i_1_n_0    | reset_IBUF       |                2 |              6 |         3.00 |
+|  clk_IBUF_BUFG | pong_graph_unit/ship_y_reg[8]_i_1_n_0        | reset_IBUF       |                4 |              7 |         1.75 |
+|  clk_IBUF_BUFG | pong_graph_unit/missile_x_reg[9]_i_1_n_0     | reset_IBUF       |                6 |              8 |         1.33 |
+|  clk_IBUF_BUFG | pong_graph_unit/missile_y_reg[8]_i_1_n_0     | reset_IBUF       |                5 |              8 |         1.60 |
+|  clk_IBUF_BUFG | pong_graph_unit/ship_x_reg[9]_i_1_n_0        | reset_IBUF       |                5 |              8 |         1.60 |
+|  clk_IBUF_BUFG | vga_sync_unit/v_cnt_reg0                     | reset_IBUF       |                6 |             10 |         1.67 |
+|  clk_IBUF_BUFG | vga_sync_unit/E[0]                           | reset_IBUF       |                7 |             13 |         1.86 |
+|  clk_IBUF_BUFG | pong_graph_unit/ast_radius_reg[1][4]_i_1_n_0 | reset_IBUF       |               11 |             16 |         1.45 |
+|  clk_IBUF_BUFG | pong_graph_unit/ast_x_reg[4][9]_i_1_n_0      | reset_IBUF       |               13 |             18 |         1.38 |
+|  clk_IBUF_BUFG | pong_graph_unit/ast_x_reg[5][9]_i_1_n_0      | reset_IBUF       |               12 |             18 |         1.50 |
+|  clk_IBUF_BUFG | pong_graph_unit/ast_x_reg[1][9]_i_1_n_0      | reset_IBUF       |               13 |             18 |         1.38 |
+|  clk_IBUF_BUFG | pong_graph_unit/ast_radius_reg[0][4]_i_1_n_0 | reset_IBUF       |               11 |             18 |         1.64 |
+|  clk_IBUF_BUFG | pong_graph_unit/ast_radius_reg[2][4]_i_1_n_0 | reset_IBUF       |               12 |             18 |         1.50 |
+|  clk_IBUF_BUFG | pong_graph_unit/ast_radius_reg[4][4]_i_1_n_0 | reset_IBUF       |               14 |             18 |         1.29 |
+|  clk_IBUF_BUFG | pong_graph_unit/ast_radius_reg[6][4]_i_1_n_0 | reset_IBUF       |               11 |             18 |         1.64 |
+|  clk_IBUF_BUFG | pong_graph_unit/ast_size_reg[3][5]_i_1_n_0   | reset_IBUF       |               15 |             18 |         1.20 |
+|  clk_IBUF_BUFG | pong_graph_unit/ast_y_reg[0][8]_i_1_n_0      | reset_IBUF       |                9 |             18 |         2.00 |
+|  clk_IBUF_BUFG | pong_graph_unit/ast_y_reg[2][8]_i_1_n_0      | reset_IBUF       |               14 |             18 |         1.29 |
+|  clk_IBUF_BUFG | pong_graph_unit/ast_y_reg[3][8]_i_1_n_0      | reset_IBUF       |               14 |             18 |         1.29 |
+|  clk_IBUF_BUFG | pong_graph_unit/ast_y_reg[6][8]_i_1_n_0      | reset_IBUF       |               13 |             18 |         1.38 |
+|  clk_IBUF_BUFG | pong_graph_unit/ast_center_reg[5][5]_i_1_n_0 | reset_IBUF       |               12 |             22 |         1.83 |
+|  clk_IBUF_BUFG |                                              | reset_IBUF       |               34 |             54 |         1.59 |
+|  clk_IBUF_BUFG | pong_graph_unit/score_reg                    | reset_IBUF       |               34 |             70 |         2.06 |
++----------------+----------------------------------------------+------------------+------------------+----------------+--------------+
+
+
